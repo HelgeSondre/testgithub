@@ -30,11 +30,11 @@ int main()
 	for (int i = 0; i <= 10; i++)
 	{
 		A1.push_back(a1);
-		a1 = a1 + 1;
+		a1 = rand() % 10;
 		A2.push_back(a2);
-		a2 = a2 + 2;
+		a2 = rand() % 20;
 		A3.push_back(a3);
-		a3 = a3 + 3;
+		a3 = rand() % 30;
 
 		B1.push_back(b1);
 		b1 = b1 + 4;
@@ -56,11 +56,11 @@ int main()
 		std::cout << *it << " ";
 	}
 
-	std::cout << "\nVector A1: ";
+	std::cout << "\nVector A2: ";
 	for (auto it = A2.begin(); it != A2.end(); it++) {
 		std::cout << *it << " ";
 	}
-	std::cout << "\nVector A1: ";
+	std::cout << "\nVector A3: ";
 	for (auto it = A3.begin(); it != A3.end(); it++) {
 		std::cout << *it << " ";
 	}
